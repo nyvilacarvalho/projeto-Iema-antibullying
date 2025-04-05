@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  
+
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: weight;
+  background-color: #FFFBFF;
+  display: flex; 
+
+}
+
+.container {
+  margin-top: 57px;
+  margin: auto;
+  width: 80%; /* Define a largura desejada do contêiner */
+
+}
+
+
+
+
+h1 {
+  font-size: 20px;
+  
+}
+
+h2 {
+  margin-left: 10%; /* Adiciona um espaço de 75px da margem esquerda */
+  font-size: 20px; /* Ajusta o tamanho da fonte */
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.color {
+  color: #9567EB; 
+  display: inline; 
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* celular */
+@media (max-width: 450px) {
+  .container {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+.box-1 {
+font-weight: b;
+margin: 35px 11px 11px 0px;
+}
+
+
+button {
+  /*
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0; */
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  padding: 16px 24px;
+  
+  background: #9567EB;
+  border: 1px solid #676767;
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  
+
+font-weight: bold;
+font-size: small;
+transition: 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  accent-color:#9567EB; /* Altera a cor da caixa de seleção em navegadores compatíveis */
+}
