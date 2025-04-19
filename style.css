@@ -94,19 +94,14 @@ label[for="type"] {
 
 
 
-.info-1 {
-  margin-top: 35px;
+.infos
+ {
+  margin-top: 25px;
 }
 
-.info-1 h3 {
+.infos h3 {
   margin-bottom: 15px;
 }
-
-
-.info-2 {
-  margin-top: 35px;
-}
-
 
 button {
  /*
@@ -136,7 +131,7 @@ button {
  transition: 0.2s;
 }
 
-
+/*checkzinho quadrado que so pode marcar uma opcao*/
 .custom-radio {
   appearance: none;
   -webkit-appearance: none;
@@ -157,13 +152,16 @@ button {
 .custom-radio:checked::after {
   content: "✓"; 
   color: white; 
-  font-size: 12px; /* Tamanho do ícone */
+  font-size: 10px; /* Tamanho do ícone */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+input[type="checkbox"]:checked {
+  accent-color:#9567EB; /* Altera a cor da caixa de seleção em navegadores compatíveis */
+}
 
 /*.circulo {
   width: 100px;
