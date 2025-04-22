@@ -54,16 +54,16 @@
             
             <div class="infos">
                   <h3>Tipo de bullying:</h3>
-                   <input type="checkbox" name="" id="" > 
+                   <input type="radio" class="custom-radio" > 
                    <label for="type">Físico (agressão, empurroções, etc.)</label><br>
                 
-                  <input type="checkbox" name="" id="" > 
+                  <input type="radio" class="custom-radio" > 
                   <label for="type">Verbal (xingamentos, insultodos, etc.)</label><br>
                   
-                  <input type="checkbox" name="" id=""> 
+                  <input type="radio" class="custom-radio"> 
                   <label for="type">Cyberbullying (mensagens ofensivas, exposição, etc.)</label><br>
                 
-                  <input type="checkbox" name="" id="">
+                  <input type="radio" class="custom-radio">
                   <label for="type">Exclusão social (exclusão de grupos, isolamento, etc.)</label>
                 </div>
 
@@ -77,31 +77,35 @@
 <div class="infos">
      <p>Acontece com frequência?</p>
      <label for="">Sim</label>
-      <input type="checkbox" name="" id="">
+      <input type="radio" name="select-1" class="custom-radio">
       <label for="">Não</label>
-     <input type="checkbox" name="" id="">
+     <input type="radio" name="select-1" class="custom-radio">
 
     </div>
     
     <div class="infos">
      <p>Já denunciou antes?</p>
-     <label for="">Sim</label>
-      <input type="checkbox" name="" id="">
-      <label for="">Não</label>
-     <input type="checkbox" name="" id="">
+     <label>Sim</label>
+     <input type="radio" class="custom-radio" name="select-2">
+
+      <label>Não</label>
+      <input type="radio" class="custom-radio" name="select-2">
     </div>
+
+
+    <div class="infos">
      <p>Local onde aconteceu?</p>
      <input type="text" name="" id="">
+    </div>
 
-
-     <form action="/upload" method="post" enctype="multipart/form-data">
-      <label for="fileUpload">Escolha um arquivo:</label>
+    <div class="infos">
+      <label for="fileUpload">Evidencias</label>
       <input type="file" id="fileUpload" name="arquivo">
-    </form>
-    
+    </div>
 
+    <div class="infos">
      <button type="submit">Enviar denúncia</button>    
-
+</div>
 
 </div>
 </body>
