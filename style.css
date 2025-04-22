@@ -37,6 +37,7 @@ h1 {
   font-size: 19px;
   font-weight: 700;
   margin-top: 40px;
+  text-align: center;
 }
 
 h2 {
@@ -174,3 +175,16 @@ input[type="checkbox"]:checked {
 textarea {
   resize: none;
 }
+
+
+.boll {
+  width: 240px;
+  height: 240px;
+  background-color: #DAB2FF;
+  border-radius: 50%;
+  position: absolute;
+  top: -90px;
+  z-index: -1;
+  opacity: 2;
+  left: -45px;
+ }
