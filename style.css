@@ -1,12 +1,16 @@
-*{
-  
+*{ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+:root{
+  --comput-elemnetes: flex;
+}
+
+@media (min-width: 601px) {
   body {
+    display: var(--comput-elemnetes);
     font-size: 90%;
     padding: 10px;
     align-items: center;
@@ -47,6 +51,7 @@ h2 {
   font-size: 19px;
 }
 
+
 h3 {
   font-weight: bold;
 }
@@ -67,7 +72,7 @@ textarea {
   max-width: 500px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 input[type="checkbox"],
@@ -177,14 +182,38 @@ textarea {
 }
 
 
-.boll {
-  width: 240px;
-  height: 240px;
+.boll-1 {
+  width: 250px;
+  height: 250px;
   background-color: #DAB2FF;
   border-radius: 50%;
   position: absolute;
   top: -90px;
   z-index: -1;
   opacity: 2;
-  left: -45px;
+ left: -45px;
+ }
+
+
+ .triangle {
+  border-top: 100px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-right: 300px solid rgb(255, 215, 130);
+  position: absolute;
+  z-index: -1;
+  top: 300px;
+ }
+
+
+ .boll-2 {
+  width: 250px;
+  height: 250px;
+  background-color: #75dceea7;
+  border-radius: 50%;
+  position: absolute;
+  
+  top: 700px;
+  z-index: -1;
+  opacity: 2;
+ left: -45px;
  }
